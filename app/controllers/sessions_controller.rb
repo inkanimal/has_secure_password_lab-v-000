@@ -7,8 +7,3 @@ class SessionsController < ApplicationController
    end
   end
  
-# app/models/user.rb
-  class User < ActiveRecord::Base
-    has_secure_password
-  end
-end
