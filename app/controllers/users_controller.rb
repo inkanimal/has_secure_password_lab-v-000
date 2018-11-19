@@ -12,6 +12,7 @@ class UsersController < ApplicationController
     else
       redirect_to :new_user
     end
+  end
 
  
   private
