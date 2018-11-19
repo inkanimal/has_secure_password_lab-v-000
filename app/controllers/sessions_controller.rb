@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
      return head(:forbidden) unless @user.authenticate(params[:password])
      session[:user_id] = @user.id
      redirect_to :welcome
-   else
+    else
       flash[:notice] = "Login is incorrect"
       redirect_to :login
     end
